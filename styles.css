@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h22 {
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: aqua;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.doctor-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.doctor-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.loginm, .signupm, .opp, .bed {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Makes it take the full height of the viewport */
+}
+
+#login, #signup, #appointment {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#login h2, #signup h2, #appointment h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#loginForm input, #signupForm input, #appointmentForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#loginForm button, #signupForm button, #appointmentForm button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-appointment-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment-button:hover {
+    background-color: #0056b3;
+}
+
+#loginForm button:hover, #signupForm button:hover, #appointmentForm button:hover {
+    background-color: #16549b;
+}
+
+#appointmentForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#bed-booking {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#bed-booking h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#bedBookingForm input, #bedBookingForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#bedBookingForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#bedBookingForm button:hover {
+    background-color: #0056b3;
+}
+
+#bookingMessage {
+    margin-top: 20px;
+    color: green;
+}
+
+.attraction_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#attractions {
+    margin-top: 40px;
+}
+
+#attractions h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.attraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attraction img {
+    width: 440px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.attraction-description {
+    text-align: center;
+    max-width: 600px;
+}
+
+.attraction-description h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.attraction-description p {
+    margin: 0;
+    color: #555;
+    line-height: 1.8; /* Adjust as needed */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    color:black;
+}
+
+footer a {
+    color:red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: aqua;
+    background-color: tomato;
+    
+}
+

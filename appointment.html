@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System - Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bed_booking.html">Book Bed</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="opp">
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="tel" id="telephone" placeholder="Telephone Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" required>
+                    <option value="" disabled selected>Select a doctor</option>
+                    <option value="Dr. John Doe">Dr. John Doe - Cardiology</option>
+                    <option value="Dr. Jane Smith">Dr. Jane Smith - Neurology</option>
+                    <option value="Dr. Emily Johnson">Dr. Emily Johnson - Pediatrics</option>
+                </select>
+                <label for="time">Select Time:</label>
+                <select id="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                </select>
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="appointmentMessage"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hospital Management System</p>
+        <p>📩Email: <a href="mailto:medicare@gmail.com">medicare@gmail.com</a></p>
+        <p>📞Phone: <a href="tel:+250786781268">+250786781268</a></p>
+        <p>📌Location: Musanze, Rwanda</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
